@@ -1,0 +1,128 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+                    
+                          <h1>{% trans %}Few words about radar images{% endtrans %}</h1>
+                          <div id="video1"></div>
+						  
+                          <p>{% trans %}Radar images can be obtained regardless of cloud conditions and rain, which facilitates the building up of mosaic images with several scenes. In the case of French Guiana, the 18 scenes needed to cover the entire territory were collected in a few months time frame. It is obvious, though, that displaying simultaneously all 18 images in a unique image results in a diminished resolution. Several fields of application are presented in order to appreciate the interest of ERS images and to understand to what extent they have translated certain properties of the landscapes (successively: Relief, vegetation zones, the coast, the town of Kourou, the Saut Maripa). Finally, you will access an animation summarizing the main properties of the images.{% endtrans %}</p>
+						   
+                          <div id="slider1"><img src="{{asset('ajout/2-img rad/img _radar_appli_bilingue.jpg')}}"/></div>
+						  
+                          {#...#}
+                          <h2>{% trans %}Relief {% endtrans %}</h2>
+                          <p>{% trans %}Forest cover is very dense in the country's interior. The image is in fact a top vegetation image, because ERS radar waves barely penetrate the forest cover (ERS wave length is 6 cm). The impression on the relief is strong. The Geometric and radiometric distortions lead to the presence of relief due to the existence of a bright area, narrower than in reality with slopes facing the radar, and a darker area with slopes facing away: the contrast is naturally perceived by the human eye as a relief area.{% endtrans %}</p>
+						  
+						  <p>{% trans %}Title of illustration: Comparison between : an extract from 1993 ERS scene and an extract from the 1/100,000 scale topographic map.{% endtrans %}
+
+                        <div id="ign-relief" style="background-image: url('{{asset('img_rad/relief/2_ign-relief.jpeg')}}'); background-repeat:no-repeat; margin-bottom: 20px; padding: 0;">
+                          <img src="{{asset('img_rad/relief/1_ers-relief.jpeg')}}" id="front" style="margin: 0;"/>
+                        <form>
+                        <input type="range" id="transparence" name="quantity" min="0" max="100" step="1" value="100">
+                        </form> 
+                        
+						<p>{% trans %}Complement : field photo: dense forest cover{% endtrans %}
+						
+						<div id="photorelief"><img src="{{asset('img_rad/relief photo.jpeg')}}"/></div>
+						
+						<p>
+						
+						<p>{% trans %}Complement Video :Flight over the region where the dense forest cover is homogeneous. The canopy roof follows the shapes of the landform.{% endtrans %}
+                        </div>
+                        <video width="320" height="240" controls>
+                            <source src="{{asset('video/relief.mp4')}}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                          {#...#}
+						  <p>
+                          <h2>{% trans %}Areas of deforestation{% endtrans %}</h2>
+                          <p> {% trans %}Deforested areas being transformed into food-producing areas are clearly distinguishable in ERS SAR images from densely forested areas.{% endtrans %}</p>
+                          <div id="deforestation"><img src="{{asset('ajout/2-img rad/deforestation.jpg')}}"/></div>
+                          {#...#}
+						  <p>
+                          <h2>{% trans %}The coast {% endtrans %}</h2>
+                          <p>{% trans %}In this image showing part of Sinnamary region, smooth, mud flats (A) appear in black, while eroded areas (B), i.e. where the ground is covered with dead trees, are shown in bright.<br>Title of illustration: ERS image extract from 1997 and field photographs of the Sinnamary region{% endtrans %}</p>
+						  
+                          <div id="ajout"><img src="{{asset('ajout/2-img rad/cote sinnamary .jpg')}}"/></div>
+						  
+                          {#...#}
+						  
+						  <p>
+                          <h2>{% trans %}The town of Kourou {% endtrans %}</h2>
+                          <p>{% trans %}The houses of Kourou and the installations of the European Space Centre stand out brightly in this radar image. Urban or industrialised areas look, instead, as degraded. This is due to the fact that the range of available grey levels in the initial data sets has to be reduced in order to be represented on the screen. This results in saturation of the brightest zones, and, consequently, poor resolution.<br>Complement: field photos:{% endtrans %}
+						  
+						  <p>{% trans %}Photo1: City of Kourou: eastern end, by the river{% endtrans %}</p>
+						  
+						  <div id="ajout"><img src="{{asset('img_rad/kourouPhot.jpeg')}}"/></div>
+						  
+						  <p>
+						  
+						  <p>{% trans %}Photo2: Kourou Space Center: Administrative buildings and full-scale model of Ariane5{% endtrans %}
+						  
+						  <div id="ajout"><img src="{{asset('img_rad/centre4.jpeg')}}"/></div>
+						  
+						  <p>
+
+						  <p>{% trans %}Photo3: Kourou space center; distant view of the facilities{% endtrans %}</p>
+						  
+						  <div id="ajout"><img src="{{asset('img_rad/centre2.jpeg')}}"/></div>
+						  
+						  <p>
+						  
+						  <p>{% trans %}Photo4 Kourou Space Center; close-up view of the installations{% endtrans %}</p>
+						  
+						  <div id="ajout"><img src="{{asset('img_rad/Kouroucentrespa.jpeg')}}"/></div>
+						  
+                          <div id="kourou"></div>
+                          
+                          {#...#}
+                          <h2>{% trans %}The Maripa rapids {% endtrans %}</h2>
+                          <p>{% trans %}The rocky bars that restrict navigation on major rivers can be located in radar images by increasing the back scattering observed on the rocks and water turbulence, whilst the rest of the river appears black due to its smooth surface. In this ERS 1 SAR image extract, the river partition into several branches of different sizes is particularly impressive. Title of the illustration: ERS image and field shots on the Maripa jump Complement Video: Flight over a jump where the river splits up into multiple arms; to navigate a canoe in these conditions requires great know-how{% endtrans %}</p>
+
+                          <div id="maripa_rapids"></div>
+                        <video width="320" height="240" controls>
+                            <source src="{{asset('video/fleuve.mp4')}}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                          {#...#}
+                          <h2>ERS satellite</h2>
+                          <p>{% trans %}Built up and launched by the European Space Agency, the ERS satellite mission has been operating since 1991. It consists of two spacecraft, ERS-1 and ERS•2. launched in 1991 and 1995, respectively. both equipped with a SAR Synthetic Aperture Radar instrurnent with a high spatial resolution of about 25 m. The radar captures detailed views of the Earth surface. The observation system is based on an active receptor that illuminates the Earth surface and measures the reflected signal. Data are available at day and nighttime. independently from solar illumination. Moreover, as the radar signal penetrates clouds without weakening. images can be obtained regardless of climatic conditions.{% endtrans %}</p>
+                          <div id="ers_sat"></div>
+                          {#...#}
+                          <h2>{% trans %}Behavior of microwaves{% endtrans %}</h2>
+                          <h3>{% trans %}Behavior of microwaves on different media{% endtrans %}</h3>
+                          <p>{% trans %}Let us quickly summarize how the radar response evolved with the properties of the surface according to the different media encountered On the surface of the water: waves do not penetrate. If the surface is smooth, the re-flection is specular, there is no return to the antenna, and the image is dark. If the sur-face is rough the response increases and the image becomes brighter. Note that the roughness of the surface is evaluated relative to the wavelength, with a threshold separating smooth and rough media on the order of a quarter of the wavelength. (see the example on this page 'the maripa jump') On built-up areas: walls and various structures generally lead to a strong response and these areas often appear as light or even white spots on the images. (see on this page the application 'the city of Kourou') On vegetation and other natural environments:: In the case of natural landscapes, the surface conditions are very diverse and they generally lead to responses which allow them to be differentiated. The response of the vegetation depends on a large number of parameters related to the biomass and the structure of the plants. When the forest cover is dense and homogeneous, the energy response of the canopy is uniform but, for geometric reasons, the radar image then essentially reflects the forms of the relief (. (See the relief' application) Animation Video add-on: Main features of the radar system, active mode, day and night, in-sensitive to clouds{% endtrans %}</p>
+
+                          <h3>{% trans %}Behavior of microwaves on houses{% endtrans %}</h3>
+                          <p>{% trans %}Towns  imaged by radar as very rough surfaces, appear generally as bright spots. Buildings appear as bright dots (strong reflection) if the density of constructions is low. Examples include: 'The town of Kourou' (in this section), and  'The Cayenne and Kourou example'.{% endtrans %}</p>
+
+                          <h3>{% trans %} Behavior of microwaves on the natural environment{% endtrans %}</h3>
+                          <p>{% trans %}Types of vegetation cover found in natural landscapes are quite various. They can generally be discriminated due to their own back-scattering coefficient. Forested areas are characterised by intermediate back-scattering coefficients, the values of which depend on a great number of parameters: main shapes of trunks and branches, density and electrical properties of foliage, etc.. A dense and homogeneous forest ewer shows up in the image as uniform: the radar basics Ily'translates' the relief shapes. Examples include: 'Relief' (in this section), 'Geology • §'Thematic cartography'.{% endtrans %}</p>
+        </div>                                
+    </div>
+</div>
+<a href="{{path('chapters',{chapter:'general_intro'})}}" style='font-size:24px; float: left;'><span class='fa fa-arrow-left' style='margin-right: 20px;'></span>{% trans %}  Previous{% endtrans %}</a>
+<a href="{{path('chapters',{chapter:'them_carto'})}}" style='font-size:24px; float: right; margin-right: 20px;'>{% trans %}Next{% endtrans %}<span class='fa fa-arrow-right'></span></a>
+{% block javascript %}
+<script>
+  $(document).ready(
+    function main(){
+        //getImages('img_rad/main','slider1');
+        //getImages('img_rad/relief','relief');
+        getImages('img_rad/deforostation','deforostation');
+        //getImages('img_rad/coast','coast');
+        getImages('thema/kourou','kourou');
+        getImages('img_rad/maripa_rapids','maripa_rapids');
+
+
+
+
+
+    });
+        $('#transparence').on('input',()=>{
+        var n=$('#transparence').val();
+        $('#front').css("opacity",n/100);;
+        affiche(n);
+    })
+</script>
+{% endblock %}

@@ -1,0 +1,47 @@
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>{% block title %}LIP{% endblock %}</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    {% block stylesheets %} 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+    <link rel="stylesheet" href="{{asset('css/Homestyle.css')}}"/>
+
+    {% endblock %}
+    {% block javascripts %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>     
+    {% endblock %}
+
+  </head>
+{% block body %}
+<body>
+
+      <div class="section1" id="side-nav">
+      
+
+      </div>
+
+
+    <div class="section2" id="sect2">
+
+    </div>
+    <div class="footer">
+      <p>2020 Copyright ©  ENSG Géomatique Developped by Maghraoui Dhia Eddine & Namekong Teulong Patrick Franck</p>
+      <a href="https://www.facebook.com/ENSGeomatique" class="fa fa-facebook"></a>
+      <a href="https://fr.linkedin.com/edu/ecole-nationale-des-sciences-g%C3%A9ographiques-12351" class="fa fa-linkedin"></a>
+      {#<img src="{{asset('Icons/logo_ensg.png')}}"  class="logo"/>#}
+    </div>
+
+        {% block javascript %}
+        <script src="{{asset('js/sidebar.js')}}"></script>
+        {% endblock %}
+  {% endblock %}
+  </body>
+</html>
+
+

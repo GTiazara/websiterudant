@@ -1,0 +1,11 @@
+{% if app.request.locale == 'en' %}
+<a id="fr" href="{{ path('change_locale',{'locale': 'fr'}) }}"></a>
+<script>
+document.getElementById('fr').click();
+</script>
+{% else %}
+<a id="fr" href="{{ path('chapters',{chapter:'About'}) }}"></a>
+<script>
+document.getElementById('fr').click();
+</script>
+{% endif %}

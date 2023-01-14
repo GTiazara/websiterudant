@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+			
+			<div id="ajout">			
+			<table width="100%">
+			<tr>
+			<td align="left"><img src="HOME/titre01.jpeg" alt="photo de voiture"/></td>
+			<td align="center">
+			
+			<MARQUEE scrollamount="4" width="800">
+			<IMG src="HOME/titre01.jpeg >
+			<IMG src="HOME/menu.jpg">
+			<IMG src="HOME/menu1.jpg">
+			<IMG src="HOME/menu1.jpg">
+			</MARQUEE>
+			
+			</td>
+			<td align="right"><img src="HOME/Atitre01.jpeg" alt="photo de voiture"/></td>
+			</tr>
+			</table>
+			</div>
+			
+			<div id="ajout"><img src="{{asset('HOME/menu1.jpg')}}"/></div>
+						  
+
+						  
+						  
+{% block javascript %}
+<script>
+  $(document).ready(
+    function main(){
+        //getImages('HOME','kourou');
+    });
+        $('#transparence').on('input',()=>{
+        var n=$('#transparence').val();
+        $('#front').css("opacity",n/100);;
+        affiche(n);
+    })
+</script>
+{% endblock %}

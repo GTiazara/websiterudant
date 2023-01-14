@@ -1,0 +1,109 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+                    
+                          <h1>{% trans %}General cartography{% endtrans %}</h1>
+                          <p>{% trans %}Numerous regions of the globe are hardly accessible, therefore maps either do not exist at all or are old. Space radar imaging could be highly beneficial to update the cartography. This is especially true in tropical regions where radar images can be acquired regardless of cloud conditions. In the case of French Guiana, the goal was to demonstrate how ERS-SAR can help understanding the land. It was achieved through the generation of an innovative map, called 'satellite image map' or 'space map', where the image itself directly provides a great part of the information on the land cover and relief.<br>Presented afterwards<br> -Space maps in 1:100,000 and 1:200,000 scales.<br> A terrain campaign aimed at updating the geographic information on the Oyapock river, east of Guyana. This is a new, well premising application by which the user shall be able to integrate radar images in GIS (Geographic Information Systems).<br><br> Title of the illustration: <br>Image comparison (ERS mosaic) in the West and Digital Terrain Model DTM in the East.{% endtrans %}</p>
+                          {#...#}
+						  <div id="carto10"></div>
+						<br>  
+                          <h2 id="10">{% trans %}1/100 000 Space maps{% endtrans %}</h2>
+                          <p>{% trans %}The background image is an ERS multitemporal image consisting of 3 images obtained at different dates; 2 in the wet season and 1 in dry season. Superimposure of images to a cartographic reference system was done using ground reference points taken by a precise GPS system. By comparing the space map to the IGN map of the Roura region south of Cayenne, one can clearly appreciate  the complementarity of the two documents. The interest in the radar image is high. It possible to extract from the information related to the soil occupancy and to the relief: one can also mark easily waterflow, forest zones and clearings. It's worth while underlining that radar is the only tool able to capture and provide information on the state of the land du 'log the wet season, whereas optical instruments are hampered by the almost  permanent cloud cover.In this image extract. the swamps and savannahs of the coastal plain appear in lively colours (example in the upper left of the space map), which translate important changes in the radar pick-up between different dates. In our case, these differences correspond to seasonal evolutions in vegetation, levels of flooding, and plant cover.<br><br>Title of the illustration:<br> Comparison of a space map (~ 30km East West) and the IGN map south of Cayenne (continuous passage between map and image).{% endtrans %}</p>
+                        <div id="ign-relief" style="background-image: url('{{asset('generale/ign10.jpeg')}}'); background-repeat:no-repeat; margin-bottom: 20px; padding: 0;background-size:contain">
+                          <img src="{{asset('generale/spatio10.jpeg')}}" id="front_generale10" style="margin: 0;"/>
+                        <form>
+                        <input type="range" id="transparence_generale10" name="quantity" min="0" max="100" step="1" value="100">
+                        </form> 
+						
+						<p>{%trans%}Complement: grip of space maps{% endtrans %}</p>
+						
+                        </div>
+                          <div id="carto10bis"></div>
+
+                          {#...#}
+						  <br>
+                          <h2 id="20">{% trans %}1/200 000 Space maps{% endtrans %}</h2>
+                          <p>{% trans %}The interest shown by users in several Institutions for the space maps of Cayenne and Kourou regions has led the CEGN (Cellule d'Etude en Geographie Numérique) and STAT (Section Technique de l'Armée de Terre) to generate a series of space maps covering the whole territory. This activity involved not only CEGN and STAT, project coordinators, but also IGN Space for the realisation (geometric assembling, presentation, preparation of artwork)  and the UPMC (Université Pierre et Marie)   thematic interpretation. <br><br>Title of illustration:<br> Assembly table for 1/200000 spatiocards{% endtrans %}</p>
+                          <div id="carto20"></div>
+                          <p>{% trans %}Two ERS coverages were merged to setup the background image of the space maps. , Complementary information, such as names of places and routes selected in the existing maps, has been integrated in this document. This extract displays the completeness of these space maps that represent today the only precise and homogeneous maps of southern Guyana. The geometric positioning of the scenes I was carried out using the space triangulation technique combining:<br> - ground reference points (found in existing maps or localised on land by , GPS systems) <br> - satellite orbital information <br>- techniques for minimising the discrepancies in areas of overlapping adjacent images. <br><br>Title of the illustration:<br> Part of the space map on the Saint Laurent Marshes{% endtrans %}</p>
+						  <div id="carto20bis"></div>
+                          <p>{% trans %}Several extracts from images have led to thematic interpretations which have been supplied in the margins of the space maps to facilitate their use. Here we display an image extract and its interpretation over the region of Kaw east of Cayenne.<br><br> Title of the illustration:<br> Interpretation of the space map on the Kaw Marshes{% endtrans %}</p>
+						  <div id="carto20ter"></div>
+
+
+                          {#...#}
+						  <br>
+                          <h2 id="update_geo">{% trans %}Updating geographic information{% endtrans %}</h2>
+                          <p>{% trans %}GPS positioning systems used jointly with ERS SAR images facilitate the generation and updating of space maps. In the country's interior, these systems allow monitoring on-land movements and, therefore, permit to georeference the collected geographic information. In areas of hard access, such as here in the south of French Guiana at the Brazilian border, the use of GPS readings verified by means of radar imaging allows to follow an itinerary on the image: to check, for example, the access to a dangerous area: to visualise old villages in detail and to position new ones: to locate schools, health centres, isolated buildings, piers, and cultivated areas. In the domain of health, the combination 'satellite image.GPS' can contribute to understand the relationship between the natural features of an area and the development of certain diseases.<br><br>  Title of illustration:<br> Trace of GPS surveys on the Oyapock river, on ERS image background <br>Complements: Field photos: <br>Photo1 Bank of the Oyapock river <br>Photo2 Use of GPS and laser range finder to locate <br>Photo3 Continuous recording of GPS points on the river <br>Photo4 Approaching an isolated village <br>Photo5 Medical survey of the pollutants{% endtrans %}</p>
+						  
+						  
+                          <div id="maj_sig"></div>
+						  
+						  <p>{%trans%}Complement Video: reconnaissance of the settling basins of gold mining sites along a river.{% endtrans %}</p>
+						   <p style = "display:grid; justify-content:center; align-content:center;" >
+						  <video width="480" height="360" controls>
+                            <source src="{{asset('video/orpail.mp4')}}" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video>
+							</p>
+						  <p>
+                          <p>{% trans %}In a country's interior, GPS systems and radar imaging allow georeference the collected geographic information.Although the radar image does not always reveal in detail the needed information (due to its low resolution), it can contribute to understand the spatial organisation of the site under study, within a larger framework where land readings can be easily interpreted. In favourable cases, with radar images it is possible to locate villages, forest areas, savannahs, cultivated areas, and to update all information of this kind.<br><br> Illustration Title:<br> SIG Maripassoula on ERS background image <br>Complement Field Photos<br> Photo1 Small sandy beach with fishing boats <br>Photo2 Side view during an aerial flight <br>Photo3 Vertical view{% endtrans %}</p>
+						  
+						   <div id="maj_sigbis"></div>
+						   
+						   <p>{%trans%}Complement Video Flight over the village of Maripassoula{% endtrans %}</p>
+						    <p style = "display:grid; justify-content:center; align-content:center;" >
+						   <video width="480" height="360" controls>
+                            <source src="{{asset('video/maripa.mp4')}}" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video>
+							</p>
+						   <p>
+                          <p>{% trans %}In poorly mapped regions, the kind of use presented in subsection offers very interesting possibilities. Paper maps, used for so long, will be gradually replaced in several application domains by digital satellite images where information from other sources/maps will also be conveyed. Depending on user requirements, these digital satellite images might contain: onsite photographs, appropriate commentary, interpreted recent thematic maps, digitised old maps... Such an integrated approach will enrich the use of satellite images and render these affordable for users in an overgrowing number of applications.<br><br> Illustration title:<br> Extract from SIG on the Camopi <br>Complements Field Photos<br> Photo1 The Camopi river, a tributary of the Oyapock <br>Photo2 Camopi Town Hall <br>Photo3 Communication antenna{% endtrans %}</p>
+						  
+						  <div id="maj_sigter"></div>
+						  
+						  <p></p>
+						  <p></p>
+						  <p></p>
+						  <p style = "display:grid; justify-content:center; align-content:center; color: rgba(0, 255, 0, 1); background-color: white; font-size : 3em; border-radius:5px;"><strong>C'est fini-The end</strong></p>
+						  
+						  <p></p>
+						  
+						  
+						  <div style = "display: grid;grid-template-columns: 20% 60% 20%;grid-template-rows: 10% 90%; text-align:center;" >
+                            <video width="480" height="360" controls style ="grid-row: 1;grid-column: 2;" >
+                            <source src="{{asset('video/croco.mp4')}}" type="video/mp4">
+                            Your browser does not support the video tag.
+                            </video>
+                            <div style = "grid-row: 1;grid-column: 2;z-index=2; margin-top:1%; margin-left:9%; padding-bottom:0; margin-bottom:50%; ">
+                            <p style="color: rgb(248, 248, 49); font-size:2.5em; background-color:transparent; padding-bottom:0;">BYE BYE, AU REVOIR </p>
+       
+                            </div>
+							</div>
+							
+        </div>                                
+    </div>
+</div>
+<a href="{{path('chapters',{chapter:'naut_charts'})}}" style='font-size:24px; float: left;margin-left: 20px;'><span class='fa fa-arrow-left' style='margin-right: 20px;'></span>{% trans %}Previous{% endtrans %}</a>
+{% block javascript %}
+<script>
+  $(document).ready(
+    function main(){
+        getImages('generale/carto10','carto10');
+        getImages('generale/carto20','carto20');
+        getImages('generale/maj_sig','maj_sig');
+		getImages('generale/carto10bis','carto10bis')
+		getImages('generale/carto20bis','carto20bis');
+		getImages('generale/carto20ter','carto20ter');
+        getImages('generale/maj_sigbis','maj_sigbis');
+		getImages('generale/maj_sigter','maj_sigter');
+
+    });
+        $('#transparence_generale10').on('input',()=>{
+        var n=$('#transparence_generale10').val();
+        $('#front_generale10').css("opacity",n/100);;
+        affiche(n);
+    })
+</script>
+{% endblock %}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}
+				UGE-Teledec
+			{% endblock %}
+		</title>
+		<link rel = "icon" href =  "{{asset("Icons/uge_icon.ico")}}" type = "image/x-icon"> 
+	{% block stylesheets %}
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"/>
+	{% endblock %}
+
+	{% block javascripts %}
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	{% endblock %}
+	</head>
+	<body>
+		{% block body %}
+        {% endblock %}
+	</body>
+		{% block footer %}
+        <!-- Footer -->
+        <footer class="bg-dark bg-primary text-center text-white" id="footer">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/UniversiteGustaveEiffel/" role="button"
+                ><i class="fa fa-facebook-f"></i
+            ></a>
+
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/UGustaveEiffel" role="button"
+                ><i class="fa fa-twitter"></i
+            ></a>
+
+
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/universitegustaveeiffel/" role="button"
+                ><i class="fa fa-instagram"></i
+            ></a>
+
+            <!-- Linkedin 
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fa fa-linkedin-in"></i
+            ></a>-->
+
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Form -->
+            <section class="">
+            <form action="">
+                <!--Grid row-->
+                <div class="row d-flex justify-content-center">
+                <!--Grid column-->
+                <div class="col-auto">
+                    <p class="pt-2">
+                    {#<strong>{% trans %} Sign up for our newsletter {% endtrans %}</strong>#}
+                    </p>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-5 col-12">
+                    <!-- Email input -->
+                    <div class="form-outline form-white mb-4">
+                    {#<input type="email" id="form5Example2" class="form-control" />
+                    <label class="form-label" for="form5Example2">{% trans %} Email address {% endtrans %}</label>
+                    #}</div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-auto">
+                    <!-- Submit button -->
+                    {#}
+                    <button type="submit" class="btn btn-outline-light mb-4">
+                    {% trans %} Subscribe {% endtrans %}
+                    
+                    </button>#}
+                </div>
+                <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </form>
+            </section>
+            <!-- Section: Form -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+            <p>
+                {% trans %} Our partners {% endtrans %}
+            </p>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Links -->
+            <section class="">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <img src="{{asset('Icons/uge_logo.png')}}"  class="logo" id="logo2"/>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <img src="{{asset('Icons/esa_logo.png')}}"  class="logo"/>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <img src="{{asset('Icons/logo_ensg.png')}}"  class="logo"/>
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+
+                <img src="{{asset('Icons/vertigeo_logo.png')}}"  class="logo" id="logo4"/>
+
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+
+                <img src="{{asset('Icons/adat.jpg')}}"  class="logo" id="logo3"/>
+
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="http://vertigeo.ensg.eu/#sectionHome">Vertigéo</a>
+        </div>
+        <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+
+
+		{% endblock %}
+</html>
