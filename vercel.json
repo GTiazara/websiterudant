@@ -1,14 +1,8 @@
 {
+  "outputDirectory": ".",
   "functions": {
-    "api/index.php": {
-      "runtime": "vercel-php@0.5.2"
-    }
-  },
-  "routes": [
-    { "src": "/(.*)",  "dest": "/api/index.php" }
-  ],
-  "env": {
-    "APP_ENV": "prod",
-    "APP_SECRET": "6f71aad5435fe6e70b4481ffw8b1c3d2c2b6bec"
+      "api/*.php": {
+          "runtime": "vercel-php@0.5.2"
+      }
   }
 }
