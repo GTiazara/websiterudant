@@ -8,11 +8,9 @@
     "DATABASE_URL": "sqlite:///%kernel.project_dir%/data/database.sqlite",
     "MAILER_URL": "null://localhost"
   },
-  "builds": [
-    { "src": "api/index.php", "use": "vercel-php@0.5.2" },
-    { "src": "public/!(*.php)", "use": "@now/static" },
-    { "src": "public/**/!(*.php)", "use": "@now/static" }
-  ],
+  "functions": {
+    "api/index.php": {"runtime": "vercel-php@0.5.2"}
+  },
   "routes": [
     { "src": "/apple-touch-icon.png", "dest": "public/apple-touch-icon.png"},
     { "src": "/favicon.ico", "dest": "public/favicon.ico"},
